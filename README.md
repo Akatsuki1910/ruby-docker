@@ -19,6 +19,10 @@ default: &default
 4. `docker compose -f compose-dev.yml up -d`
 5. `docker compose exec web rake db:create`
 
+## メモ
+`platform: linux/x86_64`をつける必要がありあそう  
+https://madogiwa0124.hatenablog.com/entry/2024/01/08/123429
+
 ## 関連リンク
 
 https://zenn.dev/peishim/articles/89bfa48396c348
