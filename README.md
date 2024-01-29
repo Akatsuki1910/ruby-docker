@@ -3,7 +3,7 @@
 ## 手順
 
 1. `docker compose -f compose-dev.yml run --rm web rails new . --force --no-deps --database=mysql`
-2. `docker compose -f .\compose-dev.yml build`
+2. `docker compose -f compose-dev.yml build`
 3. yaml修正
 ```yaml
 # database.yml
@@ -16,7 +16,7 @@ default: &default
   host: db #修正
   port: 3306 #修正
 ```
-4. `docker compose -f compose-dev.yaml up -d`
+4. `docker compose -f compose-dev.yml up -d`
 5. `docker compose exec web rake db:create`
 
 ## 関連リンク
